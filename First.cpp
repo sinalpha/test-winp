@@ -14,9 +14,9 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance
 	
 	WndClass.cbClsExtra = 0;
 	WndClass.cbWndExtra = 0;
-	WndClass.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
-	WndClass.hCursor = LoadCursor(NULL, IDC_ARROW);
-	WndClass.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+	WndClass.hbrBackground = CreateHatchBrush(HS_DIAGCROSS ,RGB(0, 0, 255));
+	WndClass.hCursor = LoadCursor(NULL, IDC_WAIT);
+	WndClass.hIcon = LoadIcon(NULL, IDI_QUESTION);
 	WndClass.hInstance = hInstance;
 	WndClass.lpfnWndProc = WndProc;
 	WndClass.lpszClassName = lpszClass;
@@ -24,8 +24,8 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance
 	WndClass.style = CS_HREDRAW | CS_VREDRAW;
 	RegisterClass(&WndClass);
 
-	hWnd = CreateWindow(lpszClass, lpszClass, WS_OVERLAPPEDWINDOW,
-		CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
+	hWnd = CreateWindow(lpszClass, TEXT("My First Program"), WS_OVERLAPPEDWINDOW | WS_VSCROLL | WS_HSCROLL,
+		0, 0, 1000, 1000,
 		NULL, (HMENU)NULL, hInstance, NULL);
 	ShowWindow(hWnd, nCmdShow);
 	
@@ -41,6 +41,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	switch (iMessage) {
 	case WM_DESTROY:
 		PostQuitMessage(0);
+		return 0;
+	case WM_LBUTTONDOWN:
+		MessageBeep(0);
 		return 0;
 	}
 	return(DefWindowProc(hWnd, iMessage, wParam, lParam));
