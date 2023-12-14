@@ -1,0 +1,7 @@
+TEXT 매그로를 사용해 TCHAR* 타입의 변수를 초기화하려고 하면은 컴파일-에러가 난다.
+코드:
+TCHAR* str = TEXT("Hello!");
+
+const TCHAR*로 변수를 선언하면 에러가 해결된다.
+코드:
+const TCHAR* str = TEXT("Hello!");

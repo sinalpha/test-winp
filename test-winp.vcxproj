@@ -128,12 +128,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\DrawText.cpp" />
     <ClCompile Include="src\First.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
     <ClCompile Include="utility\u_print.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\u_print.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="memo\TEXT-매크로에-관한.txt" />
+    <Text Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
