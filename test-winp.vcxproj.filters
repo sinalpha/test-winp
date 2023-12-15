@@ -35,7 +35,7 @@
     <Text Include="memo\TEXT-매크로에-관한.txt">
       <Filter>memo</Filter>
     </Text>
-    <Text Include="TODO.txt">
+    <Text Include="memo\TODO.txt">
       <Filter>memo</Filter>
     </Text>
   </ItemGroup>

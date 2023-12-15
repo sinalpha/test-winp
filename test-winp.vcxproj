@@ -138,7 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="memo\TEXT-매크로에-관한.txt" />
-    <Text Include="TODO.txt" />
+    <Text Include="memo\TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
