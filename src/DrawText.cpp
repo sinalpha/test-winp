@@ -41,7 +41,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	HDC hdc;
 	PAINTSTRUCT ps;
 	RECT rt{ 100, 100, 400, 300 };
-	const TCHAR* str = TEXT("왜 이렇게나 긴 문장을 주는 것인가요? 저는 이 문장에 대해서 불만이 너무 많아서 제 마음대로 새로 만들어서 집어넣겠습니다. 그러니까 불만을 갖지마시고 그대로 보고 계세요.");
+	const TCHAR* str = TEXT("왜 이렇게나 긴 문장을 주는 것인가요?"
+		"저는 이 문장에 대해서 불만이 너무 많아서 제 마음대로 새로 만들어서 집어넣겠습니다."
+		" 그러니까 불만을 갖지마시고 그대로 보고 계세요.");
 
 	switch (iMessage) {
 	case WM_DESTROY:
