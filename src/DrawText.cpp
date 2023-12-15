@@ -49,7 +49,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		return 0;
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps);
-		DrawText(hdc, str, -1, &rt, DT_CENTER | DT_WORDBREAK);
+		DrawText(hdc, str, -1, &rt, DT_VCENTER | DT_NOCLIP);
 		EndPaint(hWnd, &ps);
 		return 0;
 	}

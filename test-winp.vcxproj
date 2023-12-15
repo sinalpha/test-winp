@@ -132,11 +132,13 @@
     <ClCompile Include="src\First.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
     <ClCompile Include="utility\u_print.cpp" />
+    <ClCompile Include="함수-명명법.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\u_print.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="memo\ALDO.txt" />
     <Text Include="memo\TEXT-매크로에-관한.txt" />
     <Text Include="memo\TODO.txt" />
   </ItemGroup>
