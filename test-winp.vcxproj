@@ -130,11 +130,12 @@
   <ItemGroup>
     <ClCompile Include="src\DrawText.cpp" />
     <ClCompile Include="src\First.cpp" />
+    <ClCompile Include="src\GraphOut.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
-    <ClCompile Include="utility\u_print.cpp" />
+    <ClCompile Include="utility\myPrint.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="utility\include\u_print.h" />
+    <ClInclude Include="utility\include\myPrint.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="memo\ALDO.txt" />

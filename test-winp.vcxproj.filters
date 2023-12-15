@@ -13,7 +13,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="utility\u_print.cpp">
+    <ClCompile Include="utility\myPrint.cpp">
       <Filter>utility</Filter>
     </ClCompile>
     <ClCompile Include="src\First.cpp">
@@ -25,9 +25,12 @@
     <ClCompile Include="src\DrawText.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\GraphOut.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="utility\include\u_print.h">
+    <ClInclude Include="utility\include\myPrint.h">
       <Filter>utility</Filter>
     </ClInclude>
   </ItemGroup>

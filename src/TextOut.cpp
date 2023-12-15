@@ -1,6 +1,6 @@
 //#include <windows.h>
 //
-//#include "../utility/include/u_print.h"
+//#include "../utility/include/myPrint.h"
 //
 //LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 //HINSTANCE g_hInst;
@@ -56,7 +56,7 @@
 //		TextOut(hdc, 200, 100, TEXT("Lovely Home Country"), 19);
 //		
 //		TCHAR str[100];
-//		u_wsprintf(str, 100);
+//		my::myWsprintf(str, 100);
 //		TextOut(hdc, 10, 10, str, lstrlen(str));
 //		
 //		EndPaint(hWnd, &ps);
