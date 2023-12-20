@@ -34,6 +34,9 @@
     <ClCompile Include="src\Key.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\KeyDown.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\myPrint.h">

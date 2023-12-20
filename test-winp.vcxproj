@@ -132,6 +132,7 @@
     <ClCompile Include="src\First.cpp" />
     <ClCompile Include="src\GraphOut.cpp" />
     <ClCompile Include="src\Key.cpp" />
+    <ClCompile Include="src\KeyDown.cpp" />
     <ClCompile Include="src\MessageBox.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
     <ClCompile Include="utility\myPrint.cpp" />
