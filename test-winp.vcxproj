@@ -134,6 +134,8 @@
     <ClCompile Include="src\Key.cpp" />
     <ClCompile Include="src\KeyDown.cpp" />
     <ClCompile Include="src\MessageBox.cpp" />
+    <ClCompile Include="src\Mouse.cpp" />
+    <ClCompile Include="src\newest.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
     <ClCompile Include="utility\myPrint.cpp" />
   </ItemGroup>

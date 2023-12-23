@@ -47,7 +47,7 @@
 //	switch (iMessage) {
 //	case WM_KEYDOWN:
 //		switch (wParam) {
-//		case VK_LEFT:	
+//		case VK_LEFT:
 //			x -= 8;
 //			break;
 //		case VK_RIGHT:
@@ -71,7 +71,7 @@
 //		hdc = BeginPaint(hWnd, &ps);
 //		if (toggle)
 //			TextOut(hdc, x, y, TEXT("A"), 1);
-//		else 
+//		else
 //			TextOut(hdc, x, y, TEXT("#"), 1);
 //		EndPaint(hWnd, &ps);
 //		return 0;
