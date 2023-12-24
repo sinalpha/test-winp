@@ -137,6 +137,7 @@
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\MyTimer.cpp" />
     <ClCompile Include="src\newest.cpp" />
+    <ClCompile Include="src\Sansu.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
     <ClCompile Include="utility\myPrint.cpp" />
   </ItemGroup>
