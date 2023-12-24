@@ -139,6 +139,7 @@
     <ClCompile Include="src\newest.cpp" />
     <ClCompile Include="src\Sansu.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
+    <ClCompile Include="src\TwoTimer.cpp" />
     <ClCompile Include="utility\myPrint.cpp" />
   </ItemGroup>
   <ItemGroup>
