@@ -8,18 +8,18 @@
 //	
 //    const int width = 1280, height = 960;
 //	
-//    WNDCLASSEX wc = { sizeof(WNDCLASSEX),
-//                 CS_CLASSDC,
-//                 WndProc,
-//                 0L,
-//                 0L,
-//                 GetModuleHandle(NULL),
-//                 NULL,
-//                 NULL,
-//                 NULL,
-//                 NULL,
-//                 L"newest", 
-//                 NULL };
+    //WNDCLASSEX wc = { sizeof(WNDCLASSEX),
+    //             CS_CLASSDC,
+    //             WndProc,
+    //             0L,
+    //             0L,
+    //             GetModuleHandle(NULL),
+    //             NULL,
+    //             NULL,
+    //             NULL,
+    //             NULL,
+    //             L"newest", 
+    //             NULL };
 //
 //	RegisterClassEx(&wc);
 //

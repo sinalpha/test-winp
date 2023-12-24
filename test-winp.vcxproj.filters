@@ -43,6 +43,9 @@
     <ClCompile Include="src\newest.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\MyTimer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\myPrint.h">
@@ -60,6 +63,12 @@
       <Filter>memo</Filter>
     </Text>
     <Text Include="memo\함수-명명법.txt">
+      <Filter>memo</Filter>
+    </Text>
+    <Text Include="memo\lParam과 wParam의 의미.txt">
+      <Filter>memo</Filter>
+    </Text>
+    <Text Include="memo\DefWindowProc의-용법.txt">
       <Filter>memo</Filter>
     </Text>
   </ItemGroup>
