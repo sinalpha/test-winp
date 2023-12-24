@@ -40,17 +40,19 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
 	HDC hdc;
 	PAINTSTRUCT ps;
+	static RECT rt = { 100,100,400,120 };
 	SYSTEMTIME st;
 	static TCHAR sTime[128];
 
 	switch (iMessage) {
 	case WM_CREATE:
 		SetTimer(hWnd, 1, 1000, NULL);
+		SendMessage(hWnd, WM_TIMER, 1, 0);
 		return 0;
 	case WM_TIMER:
 		GetLocalTime(&st);
 		wsprintf(sTime, TEXT("지금 시간은 %d:%d:%d입니다."), st.wHour, st.wMinute, st.wSecond);
-		InvalidateRect(hWnd, NULL, TRUE);
+		InvalidateRect(hWnd, &rt, TRUE);
 		return 0;
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps);
