@@ -52,6 +52,9 @@
     <ClCompile Include="src\TwoTimer.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\RandGrp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\myPrint.h">
