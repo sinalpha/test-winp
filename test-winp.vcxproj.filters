@@ -55,6 +55,9 @@
     <ClCompile Include="src\RandGrp.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Callback.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\myPrint.h">
@@ -78,6 +81,9 @@
       <Filter>memo</Filter>
     </Text>
     <Text Include="memo\DefWindowProc의-용법.txt">
+      <Filter>memo</Filter>
+    </Text>
+    <Text Include="memo\선점형-멀티-태스킹.txt">
       <Filter>memo</Filter>
     </Text>
   </ItemGroup>
