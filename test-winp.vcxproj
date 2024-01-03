@@ -138,9 +138,12 @@
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\MyTimer.cpp" />
     <ClCompile Include="src\newest.cpp" />
+    <ClCompile Include="src\OnceTimer.cpp" />
     <ClCompile Include="src\RandGrp.cpp" />
     <ClCompile Include="src\Sansu.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
+    <ClCompile Include="src\TimerText.cpp" />
+    <ClCompile Include="src\TimerText2.cpp" />
     <ClCompile Include="src\TwoTimer.cpp" />
     <ClCompile Include="utility\myPrint.cpp" />
   </ItemGroup>
@@ -150,7 +153,8 @@
   <ItemGroup>
     <Text Include="memo\ALDO.txt" />
     <Text Include="memo\DefWindowProc의-용법.txt" />
-    <Text Include="memo\lParam과 wParam의 의미.txt" />
+    <Text Include="memo\lParam과-wParam의-의미.txt" />
+    <Text Include="memo\SetTimer함수-에러해결.txt" />
     <Text Include="memo\TEXT-매크로에-관한.txt" />
     <Text Include="memo\TODO.txt" />
     <Text Include="memo\선점형-멀티-태스킹.txt" />

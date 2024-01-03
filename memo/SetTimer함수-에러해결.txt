@@ -1,0 +1,2 @@
+void CALLBACK TimerProc(HWND hWnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime);
+다음과 같이 선언 및 정의

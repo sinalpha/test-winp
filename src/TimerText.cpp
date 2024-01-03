@@ -1,14 +1,9 @@
 //#include <windows.h>
-//#include <random>
 //
 //LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 //HINSTANCE g_hInst;
 //LPCTSTR lpszClass = TEXT("Timer");
 //
-//std::uniform_int_distribution<int> uid1{ 0, 499 };
-//std::uniform_int_distribution<int> uid2{ 0, 399 };
-//std::uniform_int_distribution<int> colUid{ 0, 255 };
-//std::default_random_engine dre;
 //
 //int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance
 //	, LPSTR lpszCmdParam, int nCmdShow)
@@ -30,6 +25,7 @@
 //	WndClass.style = CS_HREDRAW | CS_VREDRAW;
 //	RegisterClass(&WndClass);
 //
+//	//윈도우 크기 설정은 스킵한다.
 //	hWnd = CreateWindow(lpszClass, lpszClass, WS_OVERLAPPEDWINDOW,
 //		CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
 //		NULL, (HMENU)NULL, hInstance, NULL);
@@ -42,29 +38,30 @@
 //	return (int)Message.wParam;
 //}
 //
-//void CALLBACK TimerProc(HWND hWnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime) {
-//	HDC hdc;
-//	int i;
-//	hdc = GetDC(hWnd);
-//	for (i = 0; i < 1000; ++i)
-//		SetPixel(hdc, uid1(dre), uid2(dre), RGB(colUid(dre), colUid(dre), colUid(dre)));
-//	ReleaseDC(hWnd, hdc);
-//	
-//}
+//
 //
 //LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 //{
 //	HDC hdc;
+//	PAINTSTRUCT ps;
+//	static TCHAR str[128];
+//	static bool flag = true;
 //
 //	switch (iMessage) {
 //	case WM_CREATE:
-//		SetTimer(hWnd, 1, 50, TimerProc);
+//		SetTimer(hWnd, 1, 2000, NULL);
+//
+//		return 0;
+//	case WM_TIMER:
+//		lstrcpy(str, (flag = !flag) ? TEXT("Hello!") : TEXT("World!"));
+//		
+//		InvalidateRect(hWnd, NULL, TRUE);
 //		return 0;
 //
-//	case WM_LBUTTONDOWN:
-//		hdc = GetDC(hWnd);
-//		Ellipse(hdc, LOWORD(lParam) - 10, HIWORD(lParam) - 10, LOWORD(lParam) + 10, HIWORD(lParam) + 10);
-//		ReleaseDC(hWnd, hdc);
+//	case WM_PAINT:
+//		hdc = BeginPaint(hWnd, &ps);
+//		TextOut(hdc, 10, 10, str, lstrlen(str));
+//		EndPaint(hWnd, &ps);
 //		return 0;
 //
 //	case WM_DESTROY:

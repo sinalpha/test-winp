@@ -42,29 +42,31 @@
 //	return (int)Message.wParam;
 //}
 //
-//void CALLBACK TimerProc(HWND hWnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime) {
-//	HDC hdc;
-//	int i;
-//	hdc = GetDC(hWnd);
-//	for (i = 0; i < 1000; ++i)
-//		SetPixel(hdc, uid1(dre), uid2(dre), RGB(colUid(dre), colUid(dre), colUid(dre)));
-//	ReleaseDC(hWnd, hdc);
-//	
-//}
+//
 //
 //LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 //{
 //	HDC hdc;
+//	PAINTSTRUCT ps;
+//	static TCHAR str[128];
 //
 //	switch (iMessage) {
-//	case WM_CREATE:
-//		SetTimer(hWnd, 1, 50, TimerProc);
+//	case WM_LBUTTONDOWN:
+//		lstrcpy(str, TEXT("¿ÞÂÊ ¹öÆ°À» ´­·¶½À´Ï´Ù."));
+//		InvalidateRect(hWnd, NULL, TRUE);
+//		SetTimer(hWnd, 1, 3000, NULL);
 //		return 0;
 //
-//	case WM_LBUTTONDOWN:
-//		hdc = GetDC(hWnd);
-//		Ellipse(hdc, LOWORD(lParam) - 10, HIWORD(lParam) - 10, LOWORD(lParam) + 10, HIWORD(lParam) + 10);
-//		ReleaseDC(hWnd, hdc);
+//	case WM_TIMER:
+//		KillTimer(hWnd, 1);
+//		lstrcpy(str, TEXT(""));
+//		InvalidateRect(hWnd, NULL, TRUE);
+//		return 0;
+//
+//	case WM_PAINT:
+//		hdc = BeginPaint(hWnd, &ps);
+//		TextOut(hdc, 10, 10, str, lstrlen(str));
+//		EndPaint(hWnd, &ps);
 //		return 0;
 //
 //	case WM_DESTROY:
