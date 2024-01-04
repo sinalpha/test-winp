@@ -141,13 +141,16 @@
     <ClCompile Include="src\OnceTimer.cpp" />
     <ClCompile Include="src\RandGrp.cpp" />
     <ClCompile Include="src\Sansu.cpp" />
+    <ClCompile Include="src\sepratatingFiles.cpp" />
     <ClCompile Include="src\TextOut.cpp" />
     <ClCompile Include="src\TimerText.cpp" />
     <ClCompile Include="src\TimerText2.cpp" />
     <ClCompile Include="src\TwoTimer.cpp" />
+    <ClCompile Include="src\window.cpp" />
     <ClCompile Include="utility\myPrint.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\window.h" />
     <ClInclude Include="utility\include\myPrint.h" />
   </ItemGroup>
   <ItemGroup>

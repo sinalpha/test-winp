@@ -11,6 +11,9 @@
     <Filter Include="memo">
       <UniqueIdentifier>{c3db7160-f8aa-4bca-8d32-d00396b88124}</UniqueIdentifier>
     </Filter>
+    <Filter Include="applied src">
+      <UniqueIdentifier>{751fe49a-1035-461f-a6d7-207146ff106a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utility\myPrint.cpp">
@@ -40,9 +43,6 @@
     <ClCompile Include="src\Mouse.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\newest.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\MyTimer.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -67,10 +67,22 @@
     <ClCompile Include="src\TimerText2.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\sepratatingFiles.cpp">
+      <Filter>applied src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\newest.cpp">
+      <Filter>applied src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.cpp">
+      <Filter>applied src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\myPrint.h">
       <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\window.h">
+      <Filter>applied src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
