@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{28173e41-a66c-42a0-9928-44921d527f15}</ProjectGuid>
-    <RootNamespace>testwinp</RootNamespace>
+    <ProjectGuid>{be39f8b0-1ab9-4f93-86ab-1a2edb4202ee}</ProjectGuid>
+    <RootNamespace>ch5</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>winAPI</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,21 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="utility\myPrint.cpp" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="utility\include\myPrint.h" />
+    <ResourceCompile Include="ch5.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="memo\ALDO.txt" />
-    <Text Include="memo\DefWindowProc의-용법.txt" />
-    <Text Include="memo\lParam과-wParam의-의미.txt" />
-    <Text Include="memo\SetTimer함수-에러해결.txt" />
-    <Text Include="memo\TEXT-매크로에-관한.txt" />
-    <Text Include="memo\TODO.txt" />
-    <Text Include="memo\WM_COMMAND.txt" />
-    <Text Include="memo\선점형-멀티-태스킹.txt" />
-    <Text Include="memo\함수-명명법.txt" />
+    <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

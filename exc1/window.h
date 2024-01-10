@@ -3,7 +3,6 @@
 class Window
 {
 public:
-
 	void Init(LONG, LONG, HINSTANCE&, LPCWSTR);
 	void Cleanup();
 

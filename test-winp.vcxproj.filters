@@ -4,85 +4,18 @@
     <Filter Include="utility">
       <UniqueIdentifier>{96e5e66c-1418-4ea1-8255-9b90d2f7a0cd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="memo">
       <UniqueIdentifier>{c3db7160-f8aa-4bca-8d32-d00396b88124}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="applied src">
-      <UniqueIdentifier>{751fe49a-1035-461f-a6d7-207146ff106a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utility\myPrint.cpp">
       <Filter>utility</Filter>
     </ClCompile>
-    <ClCompile Include="src\First.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TextOut.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DrawText.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\GraphOut.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MessageBox.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Key.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\KeyDown.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Mouse.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MyTimer.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sansu.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TwoTimer.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RandGrp.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Callback.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\OnceTimer.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TimerText.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TimerText2.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sepratatingFiles.cpp">
-      <Filter>applied src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\newest.cpp">
-      <Filter>applied src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\window.cpp">
-      <Filter>applied src</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\include\myPrint.h">
       <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\window.h">
-      <Filter>applied src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +41,9 @@
       <Filter>memo</Filter>
     </Text>
     <Text Include="memo\SetTimer함수-에러해결.txt">
+      <Filter>memo</Filter>
+    </Text>
+    <Text Include="memo\WM_COMMAND.txt">
       <Filter>memo</Filter>
     </Text>
   </ItemGroup>
