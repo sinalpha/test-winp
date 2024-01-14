@@ -46,5 +46,8 @@
     <Text Include="memo\WM_COMMAND.txt">
       <Filter>memo</Filter>
     </Text>
+    <Text Include="memo\비트맵을-복사할-때-크기를-바꾸는-방법.txt">
+      <Filter>memo</Filter>
+    </Text>
   </ItemGroup>
 </Project>

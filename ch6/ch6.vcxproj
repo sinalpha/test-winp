@@ -497,6 +497,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="RopMode.cpp" />
     <ClCompile Include="RopMode2.cpp" />
   </ItemGroup>
@@ -505,6 +506,9 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ch6.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="1920-1080-sample.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -141,6 +141,7 @@
     <Text Include="memo\TEXT-매크로에-관한.txt" />
     <Text Include="memo\TODO.txt" />
     <Text Include="memo\WM_COMMAND.txt" />
+    <Text Include="memo\비트맵을-복사할-때-크기를-바꾸는-방법.txt" />
     <Text Include="memo\선점형-멀티-태스킹.txt" />
     <Text Include="memo\함수-명명법.txt" />
   </ItemGroup>
